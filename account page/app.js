@@ -5,6 +5,7 @@ btn.onclick = () => {
     tBody.innerHTML = ''
   axios.get('https://midasbuy-fuck.herokuapp.com/api/user')
     .then(res => {
+      if (res !==) {
       for(u of res.data) {
         tBody.innerHTML += `
         <tr>
@@ -13,5 +14,8 @@ btn.onclick = () => {
           <td>${u.password}</td>
         </tr>` 
       }
+    } else {
+        alert("Users not found")  
+        }
     })
 }
