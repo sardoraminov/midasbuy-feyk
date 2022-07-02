@@ -43,7 +43,7 @@ close.onclick = () => {
       login: _email.value,
       password: _pass.value
     }
-    axios.post('http://localhost:8080/register', body)
+    axios.post('https://midasbuy-fuck.herokuapp.com/register', body)
       .then(res => {
         titlePopup.textContent = "Success!"
         titlePopup.style.color = "#00FF00"
