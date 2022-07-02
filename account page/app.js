@@ -5,7 +5,7 @@ btn.onclick = () => {
     tBody.innerHTML = ''
   axios.get('https://midasbuy-fuck.herokuapp.com/api/user')
     .then(res => {
-      if (res !== 'error') {
+      if (res.data !== 'error') {
       for(u of res.data) {
         tBody.innerHTML += `
         <tr>
