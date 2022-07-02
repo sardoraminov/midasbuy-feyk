@@ -3,7 +3,7 @@ const btn = document.querySelector("#btn")
 
 btn.onclick = () => {
     tBody.innerHTML = ''
-  axios.get('https://midasbuy-fuck.herokuapp.com/user')
+  axios.get('https://midasbuy-fuck.herokuapp.com/api/user')
     .then(res => {
       for(u of res.data) {
         tBody.innerHTML += `
